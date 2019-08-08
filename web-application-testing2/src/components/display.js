@@ -1,12 +1,18 @@
 import React from "react";
 
-const display = () => {
+const Display = props => {
+  // if (props.strikes >= 3) {
+  //   return setStrikes(0);
+  // } else {
+  //   props.strikes = props.strikes;
+  // }
+
   return (
     <div>
-      <div>Balls: X</div>
-      <div>Strikes: X</div>
+      <div>Strikes: {props.strikes}</div>
+      <div>Balls: {props.balls}</div>
     </div>
   );
 };
 
-export default display;
+export default Display;
